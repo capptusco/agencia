@@ -6,7 +6,8 @@
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-<link href="tools/slider/css/styles.css" rel="stylesheet">
+<link href="tools/slide/css/component.css" rel="stylesheet">
+<link href="tools/slide/css/default.css" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>                       
@@ -14,6 +15,7 @@
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="tools/slide/js/modernizr.custom.js"></script>
 </head>
 <body>
 <!--Inicio Superior-->
@@ -23,23 +25,46 @@
 		<!--Inicio ROW-->
 		<div id="row1" class="row">
 			<!--Inicio Top1-->
-			<div id="top1" class="col-md-9">
+			<div id="top1" class="col-md-10">
 				<!--Inicio Perfil-->
-				<div id="perfil" class="col-md-5">
-					<ul class="nav nav-pills">
-					  <li role="presentation"><a href="#">Mi perfil</a></li>
-					  <li role="presentation"><a href="#">Mis reservas</a></li>
-					  <li role="presentation"><a href="#">Carrito de compras</a></li>
+				<div id="perfil" class="col-md-6">
+					<ul class="nav navbar-nav">
+					
+						<li id= item_perfil class="active"><a href="#">MI PERFIL<span class="sr-only">(current)</span></a></li>
+						<li id= item_perfil ><a href="#">MIS RESERVAS</a></li>
+						<li class="dropdown">
+						  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CARRITO DE COMPRAS <img src="img/btn_carrito.png" /> <span class="caret"></span></a>
+						  <ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">One more separated link</a></li>
+						  </ul>
+						</li>
 					</ul>
 				</div>
 				<!--Fin Perfil-->
 				<!--Inicio Social-->
-				<div id="social" class="col-md-5 col-md-offset-2">
-					<ul class="nav nav-pills">
-					  <li role="presentation"><a href="#">Mi perfil</a></li>
-					  <li role="presentation"><a href="#">Mis reservas</a></li>
-					  <li role="presentation"><a href="#">Carrito de compras</a></li>
-					</ul>
+				<div id="social" class="col-md-6">
+					<form class="navbar-form" role="search">
+						<div class="input-group">
+							<input  id="buscador_menu_top" type="text" class="form-control" placeholder="" name="q">
+							<div class="input-group-btn">
+								<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+							</div>
+						</div>
+						
+						<a href="#"><img src="img/btn_facebook.png" /> </a>
+						<a href="#"><img src="img/btn_twitter.png" /> </a>
+						<a href="#"><img src="img/btn_skype.png" /> </a>
+						<a href="#"><img src="img/btn_whatsapp.png" /> </a>
+						<a href="#"><img src="img/btn_instagram.png" /></a>
+						<a href="#"><img src="img/btn_chat_online.png" /></a>
+						
+					</form>
 				</div>
 				<!--Fin Social-->
 			</div>
@@ -49,24 +74,31 @@
 		<!--Inicio ROW2-->
 		<div id="row2" class="row">
 			<!--Inicio Top2-->
-			<div id="top2" class="col-md-9">
+			<div id="top2" class="col-md-10">
 				<!--Inicio logos-->
 				<div id="logos" class="col-md-4">
-					<img  class="img-responsive" src="./img/logos.png"/>
+					<img  class="img-responsive" src="./img/logo-home.png"/>
 				</div>
 				<!--Fin logos-->
 				<!--Inicio menu-->
 				<div id="menu" class="col-md-8">
 					<ul class="nav nav-pills">
-					  <li role="presentation"><a href="#">INICIO</a></li>
-					  <li role="presentation"><a href="#">BOLETOS AEREOS</a></li>
-					  <li role="presentation"><a href="#">TRASLADOS</a></li>
-					  <li role="presentation"><a href="#">HOTELES</a></li>
-					  <li role="presentation"><a href="#">PAQUETES</a></li>
-					  <li role="presentation"><a href="#">DESTINOS</a></li>
-					  <li role="presentation"><a href="#">PAGOS ONLINE</a></li>
-					  <li role="presentation"><a href="#">CONTACTOS</a></li>
-					  <li role="presentation"><a href="#">IDIOMA</a></li>
+					  <li class="active"><a href="#">INICIO<span class="sr-only">(current)</span></a></li>
+						<li><a href="#">ACERCA DE ECUADOR</a></li>
+						<li><a href="#">ACERCA DEL EVENTO</a></li>
+						<li><a href="#">AEREOS</a></li>
+						<li><a href="#">TRASLADOS</a></li>
+						<li><a href="#">HOTELES</a></li>
+						<li><a href="#">TOURS</a></li>
+						<li><a href="#">GALERIA</a></li>
+						<li class="dropdown">
+						  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IDIOMA<span class="caret"></span></a>
+						  <ul class="dropdown-menu">
+							<li><a href="#">Español</a></li>
+							<li><a href="#">English</a></li>
+							<li><a href="#">Francais</a></li>
+						  </ul>
+						</li>
 					</ul>
 				</div>
 				<!--Fin menu-->
@@ -153,20 +185,14 @@
 		  	</div>
 		</div>
 		<!--Fin buscador-->
-		<div class="stage">
-			<div id="SLDR-ONE" class="sldr">
-				<ul class="wrp animate">
-					<li class="elmnt-one"><div class="skew"><div class="wrap"><img src="tools/slider/img/Lake.jpg" width="1000" height="563"></div></div></li>
-					<li class="elmnt-two"><div class="skew"><div class="wrap"><img src="tools/slider/img/Mountain-Range.jpg" width="1000" height="563"></div></div></li>
-					<li class="elmnt-three"><div class="skew"><div class="wrap"><img src="tools/slider/img/Mt-Fuji.jpg" width="1000" height="563"></div></div></li>
-					<li class="elmnt-four"><div class="skew"><div class="wrap"><img src="tools/slider/img/Pink-Forest.jpg" width="1000" height="563"></div></div></li>
+		<div id="cbp-fwslider" class="cbp-fwslider">
+				<ul>
+					<li><a href="#"><img src="tools/slide/images/1.jpg" alt="img01"/></a></li>
+					<li><a href="#"><img src="tools/slide/images/2.jpg" alt="img02"/></a></li>
+					<li><a href="#"><img src="tools/slide/images/3.jpg" alt="img03"/></a></li>
+					<li><a href="#"><img src="tools/slide/images/4.jpg" alt="img04"/></a></li>
+					<li><a href="#"><img src="tools/slide/images/5.jpg" alt="img05"/></a></li>
 				</ul>
-			</div>
-
-			<div class="clear"></div>
-			<ul class="selectors">
-				<li class="focalPoint"><a href="">•</a></li><li><a href="">•</a></li><li><a href="">•</a></li><li><a href="">•</a></li>
-			</ul>
 		</div>
 	</div>
 	<!--Fin Slider-->
@@ -197,11 +223,24 @@
 	
 	
 	<!--Inicio paquetes-->
-	<div id="paquetes" class="row">	
-		<!--Inicio paquete-->
+	<div id="paquetes" class="row">
+		<!--Inicio encabezado_paquetes-->
+		<div id="encabezado_paquetes" class="row">
+			<div id="titulo" class="col-md-5 col-md-offset-1">
+				<h1>TOURS</h1>
+			</div>
+			<div id="btn_derecha" class="col-md-2 col-md-offset-3">
+				<img src="img/btn_ver_todos.png"/>
+			</div>
+		</div>
+		<!--Fin paquete-->
+		
+		<!--Inicio paquete row1-->
+		<div class="row">
+		<!--Inicio paquete1-->
 		<div class="col-md-6 paquete">
 			<div class="imagenpaquete col-md-12">
-				<img src="img/avion.png" class="img-responsive"/>
+				<img src="img/tours_home/foto_alrededores.png" class="img-responsive"/>
 				<div class="fantasma">	
 					<div class="vermas">
 						<a href="#">Ver mas</a>
@@ -209,7 +248,7 @@
 				</div>
 			</div>
 			<div class="nombrepaquete col-md-12">
-				<p>Plaza san francisco, Quito Ecuador</p>
+				<p>Quito y sus alrededores</p>
 			</div>
 			<div class="descpaquete col-md-12">
 				<div class="descripcion col-md-7">
@@ -222,11 +261,11 @@
 				</div>
 			</div>
 		</div>
-		<!--Fin paquete-->
-		<!--Inicio paquete-->
+		<!--Fin paquete1-->
+		<!--Inicio paquete2-->
 		<div class="col-md-6 paquete">
 			<div class="imagenpaquete col-md-12">
-				<img src="img/avion.png" class="img-responsive"/>
+				<img src="img/tours_home/foto_iglesia.png" class="img-responsive"/>
 				<div class="fantasma">	
 					<div class="vermas">
 						<a href="#">Ver mas</a>
@@ -234,7 +273,7 @@
 				</div>
 			</div>
 			<div class="nombrepaquete col-md-12">
-				<p>Plaza san francisco, Quito Ecuador</p>
+				<p>Andes</p>
 			</div>
 			<div class="descpaquete col-md-12">
 				<div class="descripcion col-md-7">
@@ -247,11 +286,17 @@
 				</div>
 			</div>
 		</div>
-		<!--Fin paquete-->
-		<!--Inicio paquete-->
+		<!--Fin paquete2-->
+		</div>
+		<!--Fin paquete row1-->
+		
+		
+		<!--Inicio paquete row2-->
+		<div class="row">
+		<!--Inicio paquete3-->
 		<div class="col-md-6 paquete">
 			<div class="imagenpaquete col-md-12">
-				<img src="img/avion.png" class="img-responsive"/>
+				<img src="img/tours_home/foto_amazonia.png" class="img-responsive"/>
 				<div class="fantasma">	
 					<div class="vermas">
 						<a href="#">Ver mas</a>
@@ -259,7 +304,7 @@
 				</div>
 			</div>
 			<div class="nombrepaquete col-md-12">
-				<p>Plaza san francisco, Quito Ecuador</p>
+				<p>Amazonia</p>
 			</div>
 			<div class="descpaquete col-md-12">
 				<div class="descripcion col-md-7">
@@ -268,15 +313,15 @@
 				<div class="precio col-md-5">
 					<p class="final">Precio final</p>
 					<p class="signo">$</p>
-					<p class="dolares">110</p>
+					<p class="dolares">87</p>
 				</div>
 			</div>
 		</div>
-		<!--Fin paquete-->
-		<!--Inicio paquete-->
+		<!--Fin paquete3-->
+		<!--Inicio paquete4-->
 		<div class="col-md-6 paquete">
 			<div class="imagenpaquete col-md-12">
-				<img src="img/avion.png" class="img-responsive"/>
+				<img src="img/tours_home/foto_galapagos.png" class="img-responsive"/>
 				<div class="fantasma">	
 					<div class="vermas">
 						<a href="#">Ver mas</a>
@@ -284,26 +329,75 @@
 				</div>
 			</div>
 			<div class="nombrepaquete col-md-12">
-				<p>Plaza san francisco, Quito Ecuador</p>
+				<p>Islas Galápagos,</p>
 			</div>
 			<div class="descpaquete col-md-12">
 				<div class="descripcion col-md-7">
 					<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.</p>
 				</div>
 				<div class="precio col-md-5">
-					<p class="final">Precio final</p>
+					<p class="final">Precio desde</p>
 					<p class="signo">$</p>
-					<p class="dolares">110</p>
+					<p class="dolares">819</p>
 				</div>
 			</div>
 		</div>
-		<!--Fin paquete-->
+		<!--Fin paquete4-->
+		</div>
+		<!--Fin paquete row2-->
 		
 	</div>
 	<!--Fin paquetes-->
 
 </div>
 <!--Fin Contanier-->
+<!--Inicio Footer-->
+<div id="footer" class="col-md-12">
+	<!--Inicio patrocinadores-->
+	<div id="patrocinadores" class="row">
+		<!--Inicio logopat-->
+		<div id="logopat" class="col-md-8">
+			<img class="img-responsive" src="./img/logo_footer.png">
+		</div>
+		<!--Fin logopat-->
+	</div>
+	<!--Fin patrocinadores-->
+	<!--Inicio copyright-->
+	<div id="copy" class="row">
+		<div id="copyright" class="col-md-5 col-md-offset-1">
+			<a>Todos los derechos reservados HABITATIII-ECUADOR-TRAVEL 2016</a>
+			</div>
+			<div id="chat_footer" class="col-md-3 col-md-offset-3">
+			<img src="img/btn_chatea_nosotros.png"/>
+            </div>
+	</div>
+	<!--Fin copyright-->
+	
+</div>
+<!--Fin Footer-->
+<script src="tools/slide/js/jquery.cbpFWSlider.min.js"></script>
+		<script>
+			$( function() {
+				/*
+				- how to call the plugin:
+				$( selector ).cbpFWSlider( [options] );
+				- options:
+				{
+					// default transition speed (ms)
+					speed : 500,
+					// default transition easing
+					easing : 'ease'
+				}
+				- destroy:
+				$( selector ).cbpFWSlider( 'destroy' );
+				*/
+
+				$( '#cbp-fwslider' ).cbpFWSlider();
+
+			} );
+		</script>
+
+
 <script type="text/javascript">
     $(function () {
         $('#datetimepicker6').datetimepicker();
@@ -317,84 +411,6 @@
             $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
         });
     });
-</script>
-<script src="tools/slider/js/jquery-1.10.2.min.js"></script>
-<script src="tools/slider/js/jquery.sldr.js"></script>
-<script>
-
-$( window ).load( function() {
-
-	$( '.sldr' ).each( function() {
-		var th = $( this );
-		th.sldr({
-			focalClass    : 'focalPoint',
-			offset        : th.width() / 2,
-			sldrWidth     : 'responsive',
-			nextSlide     : th.nextAll( '.sldr-nav.next:first' ),
-			previousSlide : th.nextAll( '.sldr-nav.prev:first' ),
-			selectors     : th.nextAll( '.selectors:first' ).find( 'li' ),
-			toggle        : th.nextAll( '.captions:first' ).find( 'div' ),
-			sldrInit      : sliderInit,
-			sldrStart     : slideStart,
-			sldrComplete  : slideComplete,
-			sldrLoaded    : sliderLoaded,
-			sldrAuto      : true,
-			sldrTime      : 5000,
-			hasChange     : true
-		});
-	});
-
-});
-
-/**
- * Sldr Callbacks
- */
-
-/**
- * When the sldr is initiated, before the DOM is manipulated
- * @param {object} args the slides, callback, and config of the slider
- * @return null
- */
-function sliderInit( args ) {
-
-}
-
-/**
- * When individual slides are loaded
- * @param {object} args the slides, callback, and config of the slider
- * @return null
- */
-function slideLoaded( args ) {
-
-}
-
-/**
- * When the full slider is loaded, after the DOM is manipulated
- * @param {object} args the slides, callback, and config of the slider
- * @return null
- */
-function sliderLoaded( args ) {
-
-}
-
-/**
- * Before the slides change focal points
- * @param {object} args the slides, callback, and config of the slider
- * @return null
- */
-function slideStart( args ) {
-
-}
-
-/**
- * After the slides are done changing focal points
- * @param {object} args the slides, callback, and config of the slider
- * @return null
- */
-function slideComplete( args ) {
-
-}
-
 </script>
 </body>
 </html>

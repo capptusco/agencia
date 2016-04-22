@@ -1,6 +1,9 @@
 body{
 
 }
+#btn_derecha{
+    padding-top: 18px;
+}
 #superior{
     padding: 0px;
     margin: 0px;
@@ -26,11 +29,15 @@ border-bottom: 5px solid blue;
     height: 40px;
     border-bottom: 1px solid white;
 }
+.paquete img{
+    width:100%;
+}
 .paquete{
 margin-top: 35px;
+color:white;
 }
 .nombrepaquete{
-background:grey;
+background:#434a54;
 }
 .nombrepaquete p{
 margin:0px;
@@ -45,11 +52,11 @@ margin:0px;
 }
 .descpaquete{
 display:flex;
-background:blue;
+background:#00649f;
 
 }
 .descripcion{
-background:blue;
+background:#00649f;
 }
 .descripcion p{
 padding-top: 10px;
