@@ -221,3 +221,12 @@ float:left;
     font-weight: bold;
     margin: 0px;
 }
+.imgac{
+        max-height: 60px;
+        overflow: hidden;
+}
+#acordeones .active{
+        max-height: 100%;
+}
+
+

@@ -202,17 +202,60 @@
 	<div id="acordeones" class="row">	
 		<!--Inicio Restaurantes-->
 		<div id="restaurantes" class="col-md-4">
-			hola
+			<div class="tituloacordeon row">
+				<h2>RESTAURANTES</h2>
+			</div>
+			<div class="imgac row active">
+				<img src="img/restaurantes/costa1.png">
+			</div>
+			<div class="imgac row">
+				<img src="img/restaurantes/costa1.png">
+			</div>
+			<div class="imgac row">
+				<img src="img/restaurantes/costa1.png">
+			</div>
+			<div class="masrest row">
+				<h4>Ver más</h4>
+			</div>	
+					
 		</div>
 		<!--Fin Restaurantes-->
 		<!--Inicio hoteles-->
 		<div id="hoteles" class="col-md-4">
-			hola
+			<div class="tituloacordeon row">
+				<h2>RESTAURANTES</h2>
+			</div>
+			<div class="imgac row active">
+				<img src="img/restaurantes/costa1.png">
+			</div>
+			<div class="imgac row">
+				<img src="img/restaurantes/costa1.png">
+			</div>
+			<div class="imgac row">
+				<img src="img/restaurantes/costa1.png">
+			</div>
+			<div class="masrest row">
+				<h4>Ver más</h4>
+			</div>	
 		</div>
 		<!--Fin hoteles-->
 		<!--Inicio actividades-->
 		<div id="actividades" class="col-md-4">
-			hola
+			<div class="tituloacordeon row">
+				<h2>RESTAURANTES</h2>
+			</div>
+			<div class="imgac row active">
+				<img src="img/restaurantes/costa1.png">
+			</div>
+			<div class="imgac row">
+				<img src="img/restaurantes/costa1.png">
+			</div>
+			<div class="imgac row">
+				<img src="img/restaurantes/costa1.png">
+			</div>
+			<div class="masrest row">
+				<h4>Ver más</h4>
+			</div>	
 		</div>
 		<!--Fin actividades-->
 	</div>
@@ -408,6 +451,13 @@
             $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
         });
     });
+
+    $(document).ready(function(){
+    $('#acordeones .imgac').click(function() {
+        $(this).siblings('.imgac').removeClass('active');
+        $(this).addClass('active');
+    });
+});
 </script>
 </body>
 </html>
