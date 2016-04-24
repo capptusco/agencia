@@ -1,0 +1,232 @@
+body{
+
+}
+#btn_derecha{
+    padding-top: 18px;
+}
+#superior{
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    float: none;
+    position: relative;
+}
+#menusup {
+    z-index: 100;
+    width: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	position: absolute;
+}
+#top1,#top2,#container,#pasos,#vuelos,.centrar{
+    margin: 0 auto;
+    float: none;
+}
+.pasoactivo{
+border-bottom: 5px solid blue;
+    text-align: left;
+}
+#top1 {
+    height: 40px;
+    border-bottom: 1px solid white;
+}
+.paquete img{
+    width:100%;
+}
+.paquete{
+margin-top: 35px;
+color:white;
+}
+.nombrepaquete{
+background:#434a54;
+}
+.nombrepaquete p{
+margin:0px;
+}
+
+.imagenpaquete,.descpaquete,.nombrepaquete{
+    margin: 0px;
+    padding: 0px;
+}
+.img-responsive{
+	margin: 0 auto;
+}
+.descpaquete{
+display:flex;
+background:#00649f;
+
+}
+.descripcion{
+background:#00649f;
+}
+.descripcion p{
+padding-top: 10px;
+}
+.precio{
+background:green;
+padding:0px;
+    align-items: center;
+    display: flex;
+}
+.precio p{
+float:left;
+    padding-top: 17px;
+}
+.precio .dolares {
+    padding-right: 8px;
+        font-size: 24px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    margin: 0px;
+    color: white;
+    float: right;
+}
+
+.final {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    padding-left: 4px;
+}
+.signo{
+    font-size: 22px;
+    color: white;
+    padding-left: 8px;
+}
+
+.precio .dolares {
+    padding-right: 8px;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    margin: 0px;
+    color: white;
+    float: right;
+}
+#buscador {
+    float: none;
+    margin: 0 auto;
+    z-index: 500;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
+#tipobusqueda{
+	    background: rgba(0, 0, 0, 0.6);
+}
+#tipobusqueda a{
+    font-size: 15px;
+	text-align: center;
+	border-radius: 0px;
+	color: white;
+
+}
+#tipobusqueda .active a,#tipobusqueda a:hover{
+	background: #aeb1b3;
+}
+#tipobusqueda i{
+    
+    font-size: 30px;
+}
+.vermas{
+	top: 35%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    text-align: center;
+}
+.fantasma{
+	top: 0%;
+	height: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+        text-align: center;
+}
+.fantasma:hover .vermas{
+	
+    opacity: 1;
+}
+.vermas a{
+	    color: white;
+    border: 1px solid white;
+    width: 25%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+#buscadorhoteles{
+	width: 100%;
+}
+#colizq{
+	background: #aeb1b3;
+}
+#colder{
+	padding-left: 35px;
+}
+.nombrehotel{
+	
+    text-align: center;
+    background: blue;
+    margin: 0px;
+    color: white;
+
+
+}
+#hoteles{
+    
+}
+.nombrehotel p{
+	margin: 0px;
+}
+.hotel{
+	    border: 1px solid;
+    padding: 0px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.negro{
+	color: black;
+}
+.moneda{
+	margin: 0px;
+    padding-top: 15px;
+}
+.preciomoneda{
+	display: flex;
+        margin-top: -10px;
+}
+.disponibles{
+	    text-align: center;
+    float: none;
+    margin: 0 auto;
+    border-top: 1px solid;
+    font-weight: 100;
+    color: #aeb1b3;
+}
+
+.desde{
+    font-size: 8px;
+    padding-top: 5px;
+    font-weight: bold;
+}
+.valorhotel{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0px;
+}
+.imgac{
+        max-height: 60px;
+        overflow: hidden;
+}
+#acordeones .active{
+        max-height: 100%;
+}
+
+

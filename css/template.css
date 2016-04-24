@@ -1,6 +1,20 @@
 body{
 
 }
+ li:active, li:hover{
+	text-decoration: underline white !important;
+	background-color: transparent !important;
+	
+}
+#menusup a {
+	color:white
+}
+#menusup {
+    z-index: 100;
+    width: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	position: absolute;
+}
 #btn_derecha{
     padding-top: 18px;
 }
@@ -10,23 +24,182 @@ body{
     overflow: hidden;
     float: none;
     position: relative;
+	padding-bottom:5px;
 }
-#menusup {
-    z-index: 100;
-    width: 100%;
-	background: rgba(0, 0, 0, 0.6);
-	position: absolute;
-}
+
 #top1,#top2,#container,#pasos,#vuelos,.centrar{
     margin: 0 auto;
     float: none;
 }
+
+
+
+
+#copy{
+    text-align: center;
+    padding-top: 20px;
+}
+#paginacion{
+	    padding-bottom: 10px;
+}
+#pasos a{
+    color:#aeb1b3;
+}
+#patrocinadores {
+        border: 1px solid #aeb1b3;
+    padding: 10px;
+}
+
+.seleccionar input{
+        margin-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+#filtros{
+    padding: 0px;
+}
+#pasajeros{
+        padding: 0px;
+    margin-top: 15px;
+}
+.horarios input{
+    margin-top: 20px;
+}
+#tipovuelo{
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.form-control{
+        padding: 6px 6px !important;
+}
+.horarios,.horaida,.horavuelta{
+    padding: 0px;
+    margin: 0px;
+}
+.vuelo label{
+        font-weight: 400;
+            padding: 0px;
+    margin: 0px;
+}
+.precio{
+        font-size: 20px;
+    font-weight: bold;
+        padding-top: 10px;
+}
+a:hover{
+    background: none !important;
+}
+.blanco{
+    color:white;
+}
+#top1 {
+    height: 55px;
+    border-bottom: 1px solid white;
+}
+#pasos{
+	text-align:center;
+	margin:0 auto;
+	font-size: 14px;
+    font-weight: bold;
+    color:#aeb1b3;
+}
+#pasos i{
+    float: left;
+    padding-top: 0px;
+    padding-left: 0px;
+    /* BORDER: 1PX SOLID; */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    background: #aeb1b3;
+    color: white;
+}
+.pasoactivo i{
+    float: left;
+    padding-top: 0px;
+    padding-left: 0px;
+    /* BORDER: 1PX SOLID; */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    background: #015fad !important;
+    color: white;
+    text-align: center;
+}
+#pasos a{
+float: left;
+    padding: 0px;
+    margin: 0px;
+    padding-left: 15px;
+    padding-right: 20px;
+	text-align:left;
+}
+.vuelo{
+    background: #aeb1b3;
+    border: 1px solid #aeb1b3;
+    border-radius: 5px;
+	margin-bottom: 35px;
+	padding-top: 25px;
+    padding-bottom: 25px;
+}
+.botones{
+text-align:center;
+padding: 0px;
+margin-left: 52px;
+
+}
+.horavuelta{
+    padding-top: 25px;
+}
+.pasoactivo{
+border-bottom: 5px solid #015fad !important;
+color:#015fad;
+    text-align: left;
+}
+.pasoactivo a{
+    color: #015fad !important;
+}
+#pasos li{
+        border-bottom: 5px solid #aeb1b3;
+        min-height: 45px;
+            margin-left: 25px;
+                min-width: 195px;
+}
+#footer{
+    color:#aeb1b3;
+	    padding-top: 40px;
+}
+#footer a {
+    color: #5d5d60;
+}
+
+@media (max-width: 600px) {
+    .horavuelta{
+        padding: 0px;
+    }
+    .botones{
+        margin: 0px;
+        padding: 0px;
+    }
+    .horarios{
+        text-align: center;
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+
 .pasoactivo{
 border-bottom: 5px solid blue;
     text-align: left;
 }
 #top1 {
-    height: 40px;
+    height: 55px;
     border-bottom: 1px solid white;
 }
 .paquete img{
@@ -61,9 +234,18 @@ background:#00649f;
 .descripcion p{
 padding-top: 10px;
 }
+.precio_boleto{
+	font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.precio_boleto p{
+float:left;
+    padding-top: 17px;
+}
 .precio{
-background:green;
-padding:0px;
+	background:green;
+	padding:0px;
     align-items: center;
     display: flex;
 }
@@ -221,6 +403,31 @@ float:left;
     font-weight: bold;
     margin: 0px;
 }
+
+#item_perfil {
+    padding-top: 4px;
+}
+#perfil li a, #menu li a {
+    position: relative;
+    display: block;
+    padding: 10px 4px !important;
+    font-size: 10px;
+}
+#buscador_menu_top {
+    background-color: transparent;
+    border: 0px;
+}
+#social a {
+    padding-right: 6px;
+}
+#row2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#menu {
+    padding-top: 20px;
+}
+
 .imgac{
         max-height: 60px;
         overflow: hidden;
@@ -228,5 +435,3 @@ float:left;
 #acordeones .active{
         max-height: 100%;
 }
-
-
