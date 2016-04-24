@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 <link href="tools/slide/css/component.css" rel="stylesheet">
 <link href="tools/slide/css/default.css" rel="stylesheet">
+<link href="tools/slider/css/styles.css" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>                       
@@ -18,183 +19,8 @@
 <script src="tools/slide/js/modernizr.custom.js"></script>
 </head>
 <body>
-<!--Inicio Superior-->
-<div id="superior" class="col-md-12">
-	<!--Inicio MenuSup-->
-	<div id="menusup" class="col-md-12">
-		<!--Inicio ROW-->
-		<div id="row1" class="row">
-			<!--Inicio Top1-->
-			<div id="top1" class="col-md-10">
-				<!--Inicio Perfil-->
-				<div id="perfil" class="col-md-6">
-					<ul class="nav navbar-nav">
-					
-						<li id= item_perfil class="active"><a href="#">MI PERFIL<span class="sr-only">(current)</span></a></li>
-						<li id= item_perfil ><a href="#">MIS RESERVAS</a></li>
-						<li class="dropdown">
-						  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CARRITO DE COMPRAS <img src="img/btn_carrito.png" /> <span class="caret"></span></a>
-						  <ul class="dropdown-menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li role="separator" class="divider"></li>
-							<li><a href="#">Separated link</a></li>
-							<li role="separator" class="divider"></li>
-							<li><a href="#">One more separated link</a></li>
-						  </ul>
-						</li>
-					</ul>
-				</div>
-				<!--Fin Perfil-->
-				<!--Inicio Social-->
-				<div id="social" class="col-md-6">
-					<form class="navbar-form" role="search">
-						<div class="input-group">
-							<input  id="buscador_menu_top" type="text" class="form-control" placeholder="" name="q">
-							<div class="input-group-btn">
-								<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-							</div>
-						</div>
-						
-						<a href="#"><img src="img/btn_facebook.png" /> </a>
-						<a href="#"><img src="img/btn_twitter.png" /> </a>
-						<a href="#"><img src="img/btn_skype.png" /> </a>
-						<a href="#"><img src="img/btn_whatsapp.png" /> </a>
-						<a href="#"><img src="img/btn_instagram.png" /></a>
-						<a href="#"><img src="img/btn_chat_online.png" /></a>
-						
-					</form>
-				</div>
-				<!--Fin Social-->
-			</div>
-			<!--Fin Top1-->
-		</div>
-		<!--fin ROW1-->
-		<!--Inicio ROW2-->
-		<div id="row2" class="row">
-			<!--Inicio Top2-->
-			<div id="top2" class="col-md-10">
-				<!--Inicio logos-->
-				<div id="logos" class="col-md-4">
-					<img  class="img-responsive" src="./img/logo-home.png"/>
-				</div>
-				<!--Fin logos-->
-				<!--Inicio menu-->
-				<div id="menu" class="col-md-8">
-					<ul class="nav nav-pills">
-					  <li class="active"><a href="#">INICIO<span class="sr-only">(current)</span></a></li>
-						<li><a href="#">ACERCA DE ECUADOR</a></li>
-						<li><a href="#">ACERCA DEL EVENTO</a></li>
-						<li><a href="#">AEREOS</a></li>
-						<li><a href="#">TRASLADOS</a></li>
-						<li><a href="#">HOTELES</a></li>
-						<li><a href="#">TOURS</a></li>
-						<li><a href="#">GALERIA</a></li>
-						<li class="dropdown">
-						  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IDIOMA<span class="caret"></span></a>
-						  <ul class="dropdown-menu">
-							<li><a href="#">Español</a></li>
-							<li><a href="#">English</a></li>
-							<li><a href="#">Francais</a></li>
-						  </ul>
-						</li>
-					</ul>
-				</div>
-				<!--Fin menu-->
-			</div>
-			<!--Fin Top2-->
-		</div>
-		<!--Fin ROW2-->
-	</div>
-	<!--Fin MenuSup-->
-	<!--Inicio Slider-->
-	<div id="slider" class="row">
-		<!--Inicio buscador-->
-		<div id="buscador" class="col-md-6">
-			<!--Inicio tipobusqueda-->
-			<div id="tipobusqueda" class="row">
-				 <ul class="nav nav-tabs">
-				    <li class="active"><a data-toggle="tab" href="#aereos"><i class="fa fa-plane" aria-hidden="true"></i><p>Boletos Aereos</p></a></li>
-				    <li><a data-toggle="tab" href="#traslados"><i class="fa fa-car" aria-hidden="true"></i><p>Traslados</p></a></li>
-				    <li><a data-toggle="tab" href="#hoteles"><i class="fa fa-building" aria-hidden="true"></i><p>Hoteles</p></a></li>
-				    <li><a data-toggle="tab" href="#tours"><i class="fa fa-road" aria-hidden="true"></i><p>Tours</p></a></li>
-				  </ul>
-			</div>
-			<!--Fin tipobusqueda-->
+<link rel="import" href="superior.html">
 
-			<div class="tab-content">
-			    <div id="aereos" class="tab-pane fade in active">
-			    	<!--Inicio tipoviaje-->
-					<div id="tipoviaje" class="row">
-						ojo ricardo
-					</div>
-					<!--Fin tipoviaje-->
-					<!--Inicio filtros-->
-					<div id="filtrosaereos" class="col-md-9">
-						
-					</div>
-					<!--Fin filtros-->
-					<!--Inicio botonbuscar-->
-					<div id="buscaraereos" class="col-md-3">
-						
-					</div>
-					<!--Fin botonbuscar-->
-			    </div>
-			    <div id="traslados" class="tab-pane fade">
-			    	<!--Inicio tipoviaje-->
-					<div id="tiposervicio" class="row">
-						ojo malito
-					</div>
-					<!--Fin tipoviaje-->
-					<!--Inicio filtros-->
-					<div id="filtrosservicio" class="col-md-9">
-						
-					</div>
-					<!--Fin filtros-->
-					<!--Inicio botonbuscar-->
-					<div id="buscarservicios" class="col-md-3">
-						
-					</div>
-					<!--Fin botonbuscar-->
-			    </div>
-				<div id="hoteles" class="tab-pane fade">
-					<!--Inicio filtros-->
-					<div id="filtroshoteles" class="col-md-9">
-						ojo juan
-					</div>
-					<!--Fin filtros-->
-					<!--Inicio botonbuscar-->
-					<div id="buscarhoteles" class="col-md-3">
-						
-					</div>
-					<!--Fin botonbuscar-->
-			    </div>
-				<div id="hoteles" class="tab-pane fade">
-					<!--Inicio filtros-->
-					<div id="filtrostours" class="col-md-9">
-						
-					</div>
-					<!--Fin filtros-->
-					<!--Inicio botonbuscar-->
-					<div id="buscartours" class="col-md-3">
-						
-					</div>
-					<!--Fin botonbuscar-->
-			    </div>
-		  	</div>
-		</div>
-		<!--Fin buscador-->
-		<div id="cbp-fwslider" class="cbp-fwslider">
-				<ul>
-					<li><a href="#"><img src="img/banner_rotador1.png" alt="img01"/></a></li>
-					<li><a href="#"><img src="img/banner_rotador2.png" alt="img02"/></a></li>
-				</ul>
-		</div>
-	</div>
-	<!--Fin Slider-->
-</div>
-<!--Fin Superior-->
 <!--Inicio Container-->
 <div id="container" class="col-md-10">
 
@@ -204,15 +30,18 @@
 		<div id="restaurantes" class="col-md-4">
 			<div class="tituloacordeon row">
 				<h2>RESTAURANTES</h2>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis nisi sit amet 
+				purus convallis pharetra. Nulla facilisi. Vivamus sagittis
 			</div>
 			<div class="imgac row active">
-				<img src="img/restaurantes/costa1.png">
+				
+				<img src="img/restaurantes/quito1.png">
 			</div>
 			<div class="imgac row">
-				<img src="img/restaurantes/costa1.png">
+				<img src="img/restaurantes/amazonia1.png">
 			</div>
 			<div class="imgac row">
-				<img src="img/restaurantes/costa1.png">
+				<img src="img/restaurantes/costa2.png">
 			</div>
 			<div class="masrest row">
 				<h4>Ver más</h4>
@@ -223,16 +52,18 @@
 		<!--Inicio hoteles-->
 		<div id="hoteles" class="col-md-4">
 			<div class="tituloacordeon row">
-				<h2>RESTAURANTES</h2>
+				<h2>HOTELES</h2>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis nisi sit amet 
+				purus convallis pharetra. Nulla facilisi. Vivamus sagittis
 			</div>
 			<div class="imgac row active">
-				<img src="img/restaurantes/costa1.png">
+				<img src="img/hoteles/hotel_quito1.png">
 			</div>
 			<div class="imgac row">
-				<img src="img/restaurantes/costa1.png">
+				<img src="img/hoteles/hotel_amazonia1.png">
 			</div>
 			<div class="imgac row">
-				<img src="img/restaurantes/costa1.png">
+				<img src="img/hoteles/hotel_costa1.png">
 			</div>
 			<div class="masrest row">
 				<h4>Ver más</h4>
@@ -242,16 +73,18 @@
 		<!--Inicio actividades-->
 		<div id="actividades" class="col-md-4">
 			<div class="tituloacordeon row">
-				<h2>RESTAURANTES</h2>
+				<h2>ACTIVIDADES</h2>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis nisi sit amet 
+				purus convallis pharetra. Nulla facilisi. Vivamus sagittis
 			</div>
 			<div class="imgac row active">
-				<img src="img/restaurantes/costa1.png">
+				<img src="img/actividades/actividades_cuenca1.png">
 			</div>
 			<div class="imgac row">
-				<img src="img/restaurantes/costa1.png">
+				<img src="img/actividades/actividades_amazonia1.png">
 			</div>
 			<div class="imgac row">
-				<img src="img/restaurantes/costa1.png">
+				<img src="img/actividades/actividades_costa1.png">
 			</div>
 			<div class="masrest row">
 				<h4>Ver más</h4>
@@ -415,49 +248,8 @@
 	
 </div>
 <!--Fin Footer-->
-<script src="tools/slide/js/jquery.cbpFWSlider.min.js"></script>
-		<script>
-			$( function() {
-				/*
-				- how to call the plugin:
-				$( selector ).cbpFWSlider( [options] );
-				- options:
-				{
-					// default transition speed (ms)
-					speed : 500,
-					// default transition easing
-					easing : 'ease'
-				}
-				- destroy:
-				$( selector ).cbpFWSlider( 'destroy' );
-				*/
-
-				$( '#cbp-fwslider' ).cbpFWSlider();
-
-			} );
-		</script>
+<script src="js/acordeon.js"></script>
 
 
-<script type="text/javascript">
-    $(function () {
-        $('#datetimepicker6').datetimepicker();
-        $('#datetimepicker7').datetimepicker({
-            useCurrent: false //Important! See issue #1075
-        });
-        $("#datetimepicker6").on("dp.change", function (e) {
-            $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
-        });
-        $("#datetimepicker7").on("dp.change", function (e) {
-            $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
-        });
-    });
-
-    $(document).ready(function(){
-    $('#acordeones .imgac').click(function() {
-        $(this).siblings('.imgac').removeClass('active');
-        $(this).addClass('active');
-    });
-});
-</script>
 </body>
 </html>
